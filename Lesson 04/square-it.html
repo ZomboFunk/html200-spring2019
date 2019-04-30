@@ -6,16 +6,14 @@
 
 <button onclick="myFunction()">Square it</button>
 
-<p id="demo"></p>
-
 <script>
 function myFunction() {
   var txt;
   var number = prompt("Please enter a number", "0");
-  if (number == null || number == "") {
-    txt = "User cancelled the prompt.";
+  if (number == null || number == ""){
+  txt = "user didn't input a number";
   } else {
-    txt = number*number;
+    var answer = alert(number*number);
   }
   document.getElementById("demo").innerHTML = txt;
 }
