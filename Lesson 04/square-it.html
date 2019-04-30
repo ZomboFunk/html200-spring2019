@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>SQUARE IT!</h2>
+
+<button onclick="myFunction()">Square it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var number = prompt("Please enter a number", "0");
+  if (number == null || number == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = number*number;
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
